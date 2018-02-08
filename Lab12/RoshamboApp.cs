@@ -10,7 +10,7 @@ namespace Lab12
     {
         Player user = new Player3();
         Player computerPlayer;
-
+        
         public void GetPlayer()
         {
             string input;
@@ -41,10 +41,17 @@ namespace Lab12
 
         public void Play()
         {
+            bool again = true;
             GetPlayer();
+            while (again)
+            {
+                
+            }
+        }
 
-
-
+        public string ComputerRoll(Player computer)
+        {
+            return computer.GenerateRoshambo();
         }
     }
 }
