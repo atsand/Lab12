@@ -42,17 +42,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GlipGlop.cs" />
-    <Compile Include="Human.cs" />
-    <Compile Include="Morty.cs" />
-    <Compile Include="MrMeeseeks.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Player1.cs" />
     <Compile Include="Player2.cs" />
     <Compile Include="Player3.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Roshambo.cs" />
     <Compile Include="RoshamboApp.cs" />
   </ItemGroup>
   <ItemGroup>

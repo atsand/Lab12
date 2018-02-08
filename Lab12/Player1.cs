@@ -14,6 +14,21 @@ namespace Lab12
             this.RoshamboValue = "rock";
         }
 
+        public override void AddLoss()
+        {
+            this.losses = losses++;
+        }
+
+        public override void AddTie()
+        {
+            this.ties = ties++;
+        }
+
+        public override void AddWin()
+        {
+            this.wins = wins++;
+        }
+
         public override string GenerateRoshambo()
         {
             return this.RoshamboValue;
@@ -22,6 +37,13 @@ namespace Lab12
         public override string ToString()
         {
             return this.name;
+        }
+
+        public override void Totals()
+        {
+            Console.WriteLine("\nWins: " + this.wins);
+            Console.WriteLine("Loses: " + this.losses);
+            Console.WriteLine("Ties: " + this.ties);
         }
     }
 }

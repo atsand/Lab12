@@ -10,7 +10,8 @@ namespace Lab12
     {
         static void Main(string[] args)
         {
-            
+            RoshamboApp.Play();
+            RoshamboApp.PrintResults();
         }
     }
 }

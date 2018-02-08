@@ -21,7 +21,7 @@ namespace Lab12
 
         public string Options()
         {
-            Console.WriteLine("Pick a number:\n1)\tRock\n2)\tPaper\n3)\tScissors");
+            Console.WriteLine("\nPick a number:\n1) Rock\n2) Paper\n3) Scissors");
             return GetChoice();
         }
 
@@ -58,6 +58,29 @@ namespace Lab12
         public override string ToString()
         {
             return this.name;
+        }
+
+        public override void AddWin()
+        {
+            this.wins = wins+1;
+        }
+
+        public override void AddLoss()
+        {
+            this.losses = losses+1;
+        }
+
+        public override void AddTie()
+        {
+            this.ties = ties+1;
+        }
+
+        public override void Totals()
+        {
+            Console.WriteLine("\n======================\nYour results:\n======================");
+            Console.WriteLine("Wins: " + this.wins);
+            Console.WriteLine("Loses: " + this.losses);
+            Console.WriteLine("Ties: " + this.ties + "\n");
         }
     }
 }
